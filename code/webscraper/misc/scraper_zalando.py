@@ -12,7 +12,6 @@ class ZalandoScraper:
             "authority": "www.zalando.nl",
             "sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
             "x-xsrf-token": "AAAAACwhZ8Ze_Ih7fvS997AnOKEXKdRC2aZqEaeb9wL0MHqrOAPf1gCKKgQd0wdR2ZHeNFQd2SSM2sAFgFIj0TuKjrfyKaDb5MR3nxkxn00GbuQYdPA1VaBKi9S9dRaaHdT_CaEXVigxrHJIQFhe1Ig=",
-        
             "x-zalando-feature": "catalog",
             "sec-ch-ua-mobile": "?0",
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36",

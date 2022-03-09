@@ -18,7 +18,6 @@ COLOR = colorama.Fore
 
 DISCORD_BASIC_LOGGING = False
 
-LOGGING_WEBHOOK = "https://discord.com/api/webhooks/895430214337826857/45aGFTs_MJLmRT7Vtv23BDEGXxO8iwsoCoFlRB5OAVvsK9y2gv3mPCFIEXLA9FNIiYQT"
 
 WEBHOOKS = [
     # You can add as many webhooks as u want, diving them with ","
@@ -32,12 +31,14 @@ COUNTRY_LINKS = {
 
 COUNTRY_BASE_URL = {"IT": "https://www.zalando.it/", "UK": "https://www.zalando.co.uk/"}
 
+COLOR = colorama.Fore
 LOGGING_COLORS = {
     "INFO": COLOR.CYAN,
     "LOG": COLOR.BLUE,
     "WARNING": COLOR.YELLOW,
     "ERROR": COLOR.RED,
 }
+
 
 
 def log(logType, message, details):
