@@ -1,10 +1,11 @@
-import cfscrape
-import json
+import cfscrape #  Wrapper for the request library that can bypass Cloudflare's anti-bot page 
 from bs4 import BeautifulSoup
-from utils.logging import Logger
 import pandas as pd
+import json
 
-request = cfscrape.CloudflareScraper()
+from utils.logging import Logger
+
+request = cfscrape.CloudflareScraper()  
 
 OVERVIEW_QUERY_ID = "e368030e65564d6a0b7329ac40b16870dddca3b404c3c86ee29b34c465cd2e04"
 PRODUCT_QUERY_ID = "42065a950350321d294bf6f0d60a2267042fe634956f00ef63a0a43c0db7dc38"
@@ -13,7 +14,7 @@ AVATAR_URL = "https://github.com/julianderks/Classifying-Fashion-Articles/blob/m
 
 
 class ZalandoScraper():
-    def __init__(self, dest_path, log_path):
+    def __init__(self, dest_path, log_path="./scrapers/logs"):
         self.save_path = dest_path + '/zalando_articles_raw.csv'
         self.Logger = Logger(log_path, username="Zalando Webscraper", avatar_url=AVATAR_URL,)
 
@@ -24,13 +25,16 @@ class ZalandoScraper():
         data_df = pd.DataFrame()
 
         while True:
-            print(f' ---- Page {self.page_number} ---- \n')
+            self.Logger.log_data("INFO", f"---- Page {self.page_number} ----")
+            # print(f' ---- Page {self.page_number} ---- \n')
+
             page_url = f"https://www.zalando.nl/kleding/?p={self.page_number}"
 
             content = self.get_page_content(page_url)
             page_articles = self.extract_articles(content)
             
             data_df = pd.concat([data_df, pd.DataFrame(page_articles)], ignore_index=True)
+
             data_df.to_csv(self.save_path, index=False)
             
             self.page_number += 1
@@ -38,7 +42,7 @@ class ZalandoScraper():
 
     def get_page_content(self, page_url):
         response = request.get(page_url)
-        self.check_response(response.status_code, page_url)
+        self.check_response(response.status_code)
 
         self.Logger.log_data("INFO",
                 f"Reading content of:\t{page_url}",
@@ -48,12 +52,11 @@ class ZalandoScraper():
         
         return response.content
 
-    def check_response(self, status_code, url):
+    def check_response(self, status_code):
 
         if status_code == 200:
             return 
-        else:
-            self.Logger.log_data(
+        self.Logger.log_data(
                 "ERROR",
                 f"while retrieving page {self.page_number}",
                 {"statusCode": status_code},
