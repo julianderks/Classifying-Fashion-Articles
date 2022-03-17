@@ -105,7 +105,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Julian Derks - [@your_twitter](https://www.linkedin.com/in/julianderks/)
+Julian Derks - [@Julian](https://www.linkedin.com/in/julianderks/)
 
 Project Link: [https://github.com/julianderks/Classifying-Fashion-Articles](https://github.com/julianderks/Classifying-Fashion-Articles)
 
