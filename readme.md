@@ -33,7 +33,7 @@
 
 **Note: The is a project under construction, many components will not work yet.**
 
-A self-study project with the aim to self-implement every step of an ML project (i.e from data collection to production). Specifically, a webscraper is build to extract packshots of fashion articles from [Zalando](https://zalando/kleding.com). The extacted data is preprocessed on which a (very simple) pytorch based CNN is trained. The pytorch code will contain alot of boiler plate code such that it can be used in future pytorch projects. The trained model will eventually be deployed on an web application using Flask, users will be able to interact with it and data is stored to an SQL database.
+A self-study project with the aim to self-implement every step of an ML project (i.e from data collection to production). Specifically, a webscraper is build to extract packshots of fashion articles from [Zalando](https://www.zalando.nl/kleding/). The extacted data is preprocessed on which a (very simple) pytorch based CNN is trained. The pytorch code will contain alot of boiler plate code such that it can be used in future pytorch projects. The trained model will eventually be deployed on an web application using Flask, users will be able to interact with it and data is stored to an SQL database.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -83,10 +83,11 @@ Additional screenshots, code examples and demo of scraping / training / using th
 
 ## Roadmap
 
-- :heavy_check_mark: Collect image data of fashion articles from www.zalando.com with a webscraper
-- :x: Traing/Validating/Testing the CNN implemented with pytorch
-- :x: Deploy the CNN with Flask where an user can provide an image to
-  be classified and where the results are stored in an SQL database
+- Collect image data of fashion articles from [Zalando](https://www.zalando.nl/kleding/) with a webscraper :heavy_check_mark:
+- Traing/Validating/Testing the CNN implemented with pytorch :x:
+  - Not finished
+- Deploy the CNN with Flask where an user can provide an image to be classified and where the results are stored in an SQL database :x:
+  - Made a tiny start, currently investing time in learning more about HTML/CSS and FLASK
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
