@@ -10,8 +10,7 @@ request = cfscrape.CloudflareScraper()
 OVERVIEW_QUERY_ID = "e368030e65564d6a0b7329ac40b16870dddca3b404c3c86ee29b34c465cd2e04"
 PRODUCT_QUERY_ID = "42065a950350321d294bf6f0d60a2267042fe634956f00ef63a0a43c0db7dc38"
 
-AVATAR_URL = "https://github.com/julianderks/Classifying-Fashion-Articles/blob/main/code/webscraper/zalando_scraper/images/zalando_label.png?raw=true"
-
+AVATAR_URL = ".\misc\zalando_label.png"
 
 class ZalandoScraper():
     def __init__(self, dest_path, log_path="./scrapers/logs"):

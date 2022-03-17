@@ -17,7 +17,9 @@ class Logger:
         "ERROR": COLOR.RED,
     }
 
-    LOGGING_WEBHOOK = "https://discord.com/api/webhooks/950792199400992788/JBVlxAVu-9dschDF6bED0gJJCH5D-vRVc00POgAax-JqSIsFzrYLgZ6oBQxg1Kw1VpdJ"
+    # read discord webhook api (currently turned off for simplicity, its just a nerdy gadget)
+    with open("./utils/discord_webhook.json", 'r') as myfile:
+        logging_webhook = json.load(myfile)['logging_webhook']
 
     def __init__(self, log_path, username="bot", avatar_url=""):
         self._log_path = log_path + "\log.log"
@@ -49,35 +51,35 @@ class Logger:
         with open(self._log_path, "a+") as log_file:
             log_file.write(log_txt + "\n")
 
-        if post_discord:
-            self.log_discord(log_type, message, log_date, details)
+    #     if post_discord:
+    #         self.log_discord(log_type, message, log_date, details)
 
-    def log_discord(self, log_type, message, log_date, details):
+    # def log_discord(self, log_type, message, log_date, details):
 
-        data = {
-            "content": None,
-            "embeds": [
-                {
-                    "color": None,
-                    "fields": [
-                        {"name": "LOG TYPE", "value": "`%s`" % (log_type)},
-                        {"name": "LOG MESSAGE", "value": "`%s`" % (message)},
-                        {"name": "TIME", "value": "`%s`" % (log_date)},
-                    ],
-                }
-            ],
-            "username": self._username,
-            "avatar_url": self._avatar_url,
-        }
+    #     data = {
+    #         "content": None,
+    #         "embeds": [
+    #             {
+    #                 "color": None,
+    #                 "fields": [
+    #                     {"name": "LOG TYPE", "value": "`%s`" % (log_type)},
+    #                     {"name": "LOG MESSAGE", "value": "`%s`" % (message)},
+    #                     {"name": "TIME", "value": "`%s`" % (log_date)},
+    #                 ],
+    #             }
+    #         ],
+    #         "username": self._username,
+    #         "avatar_url": self._avatar_url,
+    #     }
 
-        if len(details) != 0:
-            detailsString = ""
+    #     if len(details) != 0:
+    #         detailsString = ""
 
-            for x in details:
-                detailsString += f"`{str(x)} = {details[x]}`\n"
+    #         for x in details:
+    #             detailsString += f"`{str(x)} = {details[x]}`\n"
 
-            data["embeds"][0]["fields"].insert(
-                2, {"name": "LOG DETAILS", "value": detailsString}
-            )
+    #         data["embeds"][0]["fields"].insert(
+    #             2, {"name": "LOG DETAILS", "value": detailsString}
+    #         )
 
-        requests.post(Logger.LOGGING_WEBHOOK, json=data)
+    #     requests.post(Logger.logging_webhook, json=data)

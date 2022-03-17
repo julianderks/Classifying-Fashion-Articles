@@ -10,7 +10,7 @@ def preprocess(dim=(128, 128), considered_categories=["TROUSER", "T_SHIRT_TOP", 
     os.makedirs("./data/img", exist_ok=True)
 
     #  Load raw data
-    df = pd.read_csv("./data/zalando_articles_cleaned.csv")
+    df = pd.read_csv("./data/zalando_articles_raw.csv")
 
     #  We only want packshot images (i.e. just the article with white background)
     df = df[df["image_url"].str.contains("filter=packshot")]

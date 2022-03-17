@@ -1,6 +1,6 @@
-## Running the Zalando Webscraper
+## Usage
 
-Set code/webscraper as the working directory and run
+The article data can be scraped by running the following code from the current directory:
 
 ```bash
 python main.py

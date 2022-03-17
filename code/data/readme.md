@@ -6,4 +6,4 @@ The [data directory](https://github.com/julianderks/Classifying-Fashion-Articles
 python preprocess.py
 ```
 
-A new `zalando_articles_cleaned.csv` holding the preprocessed is created in the data directory.
+A new `zalando_articles_cleaned.csv` holding the preprocessed data is created in the data directory.
