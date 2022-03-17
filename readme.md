@@ -31,7 +31,7 @@
 
 ## About The Project
 
-<mark>Note: The is a project under construction, many components will not work yet.</mark>
+**Note: The is a project under construction, many components will not work yet.**
 
 A self-study project with the aim to self-implement every step of an ML project (i.e from data collection to production). Specifically, a webscraper is build to extract packshots of fashion articles from [Zalando](https://zalando/kleding.com). The extacted data is preprocessed on which a (very simple) pytorch based CNN is trained. The pytorch code will contain alot of boiler plate code such that it can be used in future pytorch projects. The trained model will eventually be deployed on an web application using Flask, users will be able to interact with it and data is stored to an SQL database.
 
