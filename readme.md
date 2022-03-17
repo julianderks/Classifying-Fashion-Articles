@@ -18,13 +18,8 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li><a href="#installation">Getting Started</a></li>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#installation">Installation</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
@@ -36,40 +31,38 @@
 
 ## About The Project
 
-[![misc\images\MLOps_pipeline.png][product-screenshot]](https://example.com)
+<mark>Note: The is a project under construction, many components will not work yet.</mark>
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+A self-study project with the aim to self-implement every step of an ML project (i.e from data collection to production). Specifically, a webscraper is build to extract packshots of fashion articles from [Zalando](https://zalando/kleding.com). The extacted data is preprocessed on which a (very simple) pytorch based CNN is trained. The pytorch code will contain alot of boiler plate code such that it can be used in future pytorch projects. The trained model will eventually be deployed on an web application using Flask, users will be able to interact with it and data is stored to an SQL database.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Installation
 
 1. Clone the repo
+
    ```sh
    git clone https://github.com/julianderks/Classifying-Fashion-Articles.git
    ```
+
 2. Go to project directory
+
    ```sh
    cd Classifying-Fashion-Articles
    ```
-3. create and activate new vertual environment (recommended)
+
+3. Create and activate new vertual environment (recommended)
+
    ```sh
    virtualenv venv
    ```
+
    ```sh
    source venv/bin/activate
    ```
-4. install all dependencies
+
+4. Install all dependencies
+
    ```sh
    pip install -r requirements.txt
    ```
