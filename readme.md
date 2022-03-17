@@ -36,7 +36,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![misc\images\MLOps_pipeline.png][product-screenshot]](https://example.com)
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
@@ -54,20 +54,24 @@ Use the `BLANK_README.md` to get started.
 
 ## Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/julianderks/Classifying-Fashion-Articles.git
    ```
-3. Install NPM packages
+2. Go to project directory
    ```sh
-   npm install
+   cd Classifying-Fashion-Articles
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = "ENTER YOUR API";
+3. create and activate new vertual environment (recommended)
+   ```sh
+   virtualenv venv
+   ```
+   ```sh
+   source venv/bin/activate
+   ```
+4. install all dependencies
+   ```sh
+   pip install -r requirements.txt
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -76,9 +80,9 @@ _Below is an example of how you can instruct your audience on installing and set
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+TO DO
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Additional screenshots, code examples and demo of scraping / training / using the webapp.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -105,7 +109,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Julian Derks - [@Julian](https://www.linkedin.com/in/julianderks/)
+Linkedin - [Julian Derks](https://www.linkedin.com/in/julianderks/)
 
 Project Link: [https://github.com/julianderks/Classifying-Fashion-Articles](https://github.com/julianderks/Classifying-Fashion-Articles)
 
