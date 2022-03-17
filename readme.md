@@ -1,14 +1,14 @@
-# Python project that walks trough the full pipeline of a (simple) deep learning project
+# Python project that walks trough the full pipeline of a (very simple) deep learning project
 
-<center><img src="misc\MLOps_pipeline.png" width="800px" height="400px" /><center>
+<center><img src="misc\MLOps_pipeline.png" width="500px" height="400px" /><center>
 
 We will walk through all the steps of the machine learning pipeline and deploy a simple Convolutional Neural Network (CNN) that is able to classify fashion articles.
 
-1. Collect image data of fashion articles from www.zalando.com with a webscraper
-2. Preprocess and clean the data
-3. Traing the CNN implemented with pytorch
-4. Validate the CNN
-5. Test the CNN
-6. Deploy the CNN with Flask where an use can provide an image to
-   be classified and where the results are stored in an SQL database
-7. The collected data in the database can be used to improve the model
+:heavy_check_mark: Collect image data of fashion articles from www.zalando.com with a webscraper :heavy_check_mark:
+:heavy_check_mark: Preprocess and clean the data
+:x: Traing the CNN implemented with pytorch
+:x: Validate the CNN
+:x: Test the CNN
+:x: Deploy the CNN with Flask where an user can provide an image to
+be classified and where the results are stored in an SQL database
+:x: The collected data in the database can be used to improve the model

@@ -1,0 +1,10 @@
+[2022-03-12 23:17:24] - train - INFO - SimpleCNN(
+  (conv1): Conv2d(3, 12, kernel_size=(3, 3), stride=(1, 1))
+  (conv2): Conv2d(12, 24, kernel_size=(3, 3), stride=(1, 1))
+  (conv3): Conv2d(24, 48, kernel_size=(3, 3), stride=(1, 1))
+  (conv4): Conv2d(48, 96, kernel_size=(3, 3), stride=(1, 1))
+  (fc1): Linear(in_features=3456, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=6, bias=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+)
+[2022-03-12 23:17:24] - train - WARNING - There's no GPU available on this machine,training will be performed on CPU.

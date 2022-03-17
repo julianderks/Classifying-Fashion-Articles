@@ -1,0 +1,29 @@
+{
+    "name": "SimpleCNN_ZalandoScraper",
+    "n_gpu": 1,
+    "arch": {
+        "type": "SimpleCNN",
+        "args": {
+            "num_classes": 6
+        }
+    },
+    "optimizer": {
+        "type": "Adam",
+        "args": {
+            "lr": 5e-05,
+            "weight_decay": 0,
+            "amsgrad": true
+        }
+    },
+    "loss": "cross_entropy",
+    "metrics": [
+        "accuracy",
+        "top_k_acc"
+    ],
+    "trainer": {
+        "epochs": 100,
+        "save_dir": "saved/",
+        "save_period": 1,
+        "verbosity": 2
+    }
+}

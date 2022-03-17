@@ -1,0 +1,31 @@
+[2022-03-12 23:24:23] - train - INFO - SimpleCNN(
+  (conv1): Conv2d(3, 12, kernel_size=(3, 3), stride=(1, 1))
+  (conv2): Conv2d(12, 24, kernel_size=(3, 3), stride=(1, 1))
+  (conv3): Conv2d(24, 48, kernel_size=(3, 3), stride=(1, 1))
+  (conv4): Conv2d(48, 96, kernel_size=(3, 3), stride=(1, 1))
+  (fc1): Linear(in_features=3456, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=6, bias=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+)
+
+[2022-03-12 23:24:23] - train - WARNING - There's no GPU available on this machine,training will be performed on CPU.
+[2022-03-12 23:24:31] - trainer - INFO -     epoch          : 1
+[2022-03-12 23:24:31] - trainer - INFO -     loss           : 1.7828243374824524
+[2022-03-12 23:24:31] - trainer - INFO -     accuracy       : 0.09159301346801346
+[2022-03-12 23:24:31] - trainer - INFO -     top_k_acc      : 0.5588041877104377
+[2022-03-12 23:24:31] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0312_232423\checkpoints\checkpoint-epoch1.pth ...
+[2022-03-12 23:24:39] - trainer - INFO -     epoch          : 2
+[2022-03-12 23:24:39] - trainer - INFO -     loss           : 1.7571986317634583
+[2022-03-12 23:24:39] - trainer - INFO -     accuracy       : 0.17795138888888887
+[2022-03-12 23:24:39] - trainer - INFO -     top_k_acc      : 0.7872474747474748
+[2022-03-12 23:24:39] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0312_232423\checkpoints\checkpoint-epoch2.pth ...
+[2022-03-12 23:24:46] - trainer - INFO -     epoch          : 3
+[2022-03-12 23:24:46] - trainer - INFO -     loss           : 1.726564884185791
+[2022-03-12 23:24:46] - trainer - INFO -     accuracy       : 0.38641624579124584
+[2022-03-12 23:24:46] - trainer - INFO -     top_k_acc      : 0.8916377314814815
+[2022-03-12 23:24:46] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0312_232423\checkpoints\checkpoint-epoch3.pth ...
+[2022-03-12 23:24:55] - trainer - INFO -     epoch          : 4
+[2022-03-12 23:24:55] - trainer - INFO -     loss           : 1.682966411113739
+[2022-03-12 23:24:55] - trainer - INFO -     accuracy       : 0.4823889941077441
+[2022-03-12 23:24:55] - trainer - INFO -     top_k_acc      : 0.9218092382154882
+[2022-03-12 23:24:55] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0312_232423\checkpoints\checkpoint-epoch4.pth ...
