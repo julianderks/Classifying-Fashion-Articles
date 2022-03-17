@@ -77,6 +77,10 @@ TO DO
 
 Additional screenshots, code examples and demo of scraping / training / using the webapp.
 
+### Webscraper
+
+Go to the [webscraper readme](https://github.com/julianderks/Classifying-Fashion-Articles/tree/main/code/webscraper)
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ROADMAP -->
