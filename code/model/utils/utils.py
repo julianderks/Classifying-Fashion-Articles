@@ -17,7 +17,6 @@ def write_json(content, fname):
     with fname.open("wt") as handle:
         json.dump(content, handle, indent=4, sort_keys=False)
 
-
 def prepare_device(n_gpu_use, logger=None):
     """
     setup GPU device if available. get gpu device indices which are used for DataParallel

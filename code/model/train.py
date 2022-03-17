@@ -14,8 +14,6 @@ from trainer import Trainer
 from utils import prepare_device
 
 
-# https://github.com/julianderks/pytorch-template/blob/master/train.py
-
 # fix random seeds for reproducibility
 # SEED = 123
 # torch.manual_seed(SEED)
@@ -28,7 +26,7 @@ def main(config):
     logger = config.get_logger("train")
 
     # setup data_loader instances
-    train_data_path = r"C:\Users\derks\OneDrive\Bureaublad\Classifying Fashion Articles\code\data\data"
+    train_data_path = "..\data\data"
     train_dataset = ImageDataset(train_data_path)
     data_loader = DataLoader(train_dataset, batch_size=128, shuffle=True)
 
@@ -66,7 +64,7 @@ if __name__ == "__main__":
     args.add_argument(
         "-c",
         "--config",
-        default="model\config\config.json",
+        default=".\config\config.json",
         type=str,
         help="config file path (default: None)",
     )

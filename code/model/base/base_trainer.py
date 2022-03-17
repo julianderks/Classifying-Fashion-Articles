@@ -45,7 +45,6 @@ class BaseTrainer:
 
         self.checkpoint_dir = config.save_dir / "checkpoints"
 
-        # setup visualization writer instance
         if config.resume is not None:
             self._resume_checkpoint(config.resume)
 
@@ -73,7 +72,7 @@ class BaseTrainer:
             for key, value in log.items():
                 self.logger.info(f"    {str(key):15s}: {value}")
 
-            best = False
+            best = False  # TO DO save best validation metric model separately
             if epoch % self.save_period == 0:
                 self._save_checkpoint(epoch, save_best=best)
 

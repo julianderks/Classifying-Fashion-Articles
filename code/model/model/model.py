@@ -1,6 +1,7 @@
 import torch.nn as nn
 import torch.nn.functional as F
 
+# Arbitrary CNN architecture, will update once more of training/validating script is done
 
 class SimpleCNN(nn.Module):
     def __init__(self, num_classes=10):
