@@ -51,7 +51,7 @@ A self-study project with the aim to implement every step of an ML project (i.e.
    cd Classifying-Fashion-Articles
    ```
 
-3. Create and activate new vertual environment (recommended)
+3. Create and activate new virtual environment (recommended)
 
    ```sh
    virtualenv venv
