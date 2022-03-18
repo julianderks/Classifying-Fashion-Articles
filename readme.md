@@ -90,7 +90,7 @@ Go to the [webscraper readme](https://github.com/julianderks/Classifying-Fashion
 ## Roadmap
 
 - Collect image data of fashion articles from [Zalando](https://www.zalando.nl/kleding/) with a webscraper :heavy_check_mark:
-- Traing/Validating/Testing the CNN implemented with pytorch :x:
+- Training/Validating/Testing the CNN implemented with pytorch :x:
   - Not finished
 - Deploy the CNN with Flask where an user can provide an image to be classified and where the results are stored in a database :x:
   - Made a tiny start, currently investing time in learning more about HTML/CSS and FLASK
