@@ -1,0 +1,364 @@
+[2022-03-18 12:45:15] - train - INFO - SimpleCNN(
+  (conv1): Conv2d(3, 12, kernel_size=(3, 3), stride=(1, 1))
+  (conv2): Conv2d(12, 24, kernel_size=(3, 3), stride=(1, 1))
+  (conv3): Conv2d(24, 48, kernel_size=(3, 3), stride=(1, 1))
+  (conv4): Conv2d(48, 96, kernel_size=(3, 3), stride=(1, 1))
+  (fc1): Linear(in_features=3456, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=6, bias=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+)
+
+[2022-03-18 12:45:15] - train - WARNING - There's no GPU available on this machine,training will be performed on CPU.
+
+[2022-03-18 12:45:41] - trainer - INFO -     epoch          : 1
+[2022-03-18 12:45:41] - trainer - INFO -     loss           : 1.79980062521421
+[2022-03-18 12:45:41] - trainer - INFO -     accuracy       : 0.234375
+[2022-03-18 12:45:41] - trainer - INFO -     top_k_acc      : 0.4625400641025641
+[2022-03-18 12:45:59] - trainer - INFO -     epoch          : 2
+[2022-03-18 12:45:59] - trainer - INFO -     loss           : 1.7333040695924025
+[2022-03-18 12:45:59] - trainer - INFO -     accuracy       : 0.3395432692307692
+[2022-03-18 12:45:59] - trainer - INFO -     top_k_acc      : 0.789863782051282
+[2022-03-18 12:46:16] - trainer - INFO -     epoch          : 3
+[2022-03-18 12:46:16] - trainer - INFO -     loss           : 1.604040292593149
+[2022-03-18 12:46:16] - trainer - INFO -     accuracy       : 0.46073717948717946
+[2022-03-18 12:46:16] - trainer - INFO -     top_k_acc      : 0.8459535256410257
+[2022-03-18 12:46:33] - trainer - INFO -     epoch          : 4
+[2022-03-18 12:46:33] - trainer - INFO -     loss           : 1.4128348735662608
+[2022-03-18 12:46:33] - trainer - INFO -     accuracy       : 0.45693108974358976
+[2022-03-18 12:46:33] - trainer - INFO -     top_k_acc      : 0.8529647435897435
+[2022-03-18 12:46:50] - trainer - INFO -     epoch          : 5
+[2022-03-18 12:46:50] - trainer - INFO -     loss           : 1.3132290106553297
+[2022-03-18 12:46:50] - trainer - INFO -     accuracy       : 0.5104166666666667
+[2022-03-18 12:46:50] - trainer - INFO -     top_k_acc      : 0.8633814102564104
+[2022-03-18 12:46:50] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0318_124515\checkpoints\checkpoint-epoch5.pth ...
+
+[2022-03-18 12:47:08] - trainer - INFO -     epoch          : 6
+[2022-03-18 12:47:08] - trainer - INFO -     loss           : 1.2876340701029851
+[2022-03-18 12:47:08] - trainer - INFO -     accuracy       : 0.5062099358974359
+[2022-03-18 12:47:08] - trainer - INFO -     top_k_acc      : 0.8685897435897435
+[2022-03-18 12:47:25] - trainer - INFO -     epoch          : 7
+[2022-03-18 12:47:25] - trainer - INFO -     loss           : 1.252900554583623
+[2022-03-18 12:47:25] - trainer - INFO -     accuracy       : 0.5286458333333333
+[2022-03-18 12:47:25] - trainer - INFO -     top_k_acc      : 0.8774038461538461
+[2022-03-18 12:47:43] - trainer - INFO -     epoch          : 8
+[2022-03-18 12:47:43] - trainer - INFO -     loss           : 1.2097751177274263
+[2022-03-18 12:47:43] - trainer - INFO -     accuracy       : 0.5596955128205129
+[2022-03-18 12:47:43] - trainer - INFO -     top_k_acc      : 0.8842147435897435
+[2022-03-18 12:48:01] - trainer - INFO -     epoch          : 9
+[2022-03-18 12:48:01] - trainer - INFO -     loss           : 1.1450009529407208
+[2022-03-18 12:48:01] - trainer - INFO -     accuracy       : 0.5943509615384616
+[2022-03-18 12:48:01] - trainer - INFO -     top_k_acc      : 0.8950320512820512
+[2022-03-18 12:48:18] - trainer - INFO -     epoch          : 10
+[2022-03-18 12:48:18] - trainer - INFO -     loss           : 1.092752144886897
+[2022-03-18 12:48:18] - trainer - INFO -     accuracy       : 0.6087740384615384
+[2022-03-18 12:48:18] - trainer - INFO -     top_k_acc      : 0.8960336538461539
+[2022-03-18 12:48:18] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0318_124515\checkpoints\checkpoint-epoch10.pth ...
+
+[2022-03-18 12:48:35] - trainer - INFO -     epoch          : 11
+[2022-03-18 12:48:35] - trainer - INFO -     loss           : 1.0230297858898456
+[2022-03-18 12:48:35] - trainer - INFO -     accuracy       : 0.6368189102564104
+[2022-03-18 12:48:35] - trainer - INFO -     top_k_acc      : 0.9186698717948718
+[2022-03-18 12:48:53] - trainer - INFO -     epoch          : 12
+[2022-03-18 12:48:53] - trainer - INFO -     loss           : 0.9667499707295344
+[2022-03-18 12:48:53] - trainer - INFO -     accuracy       : 0.6528445512820512
+[2022-03-18 12:48:53] - trainer - INFO -     top_k_acc      : 0.9146634615384616
+[2022-03-18 12:49:10] - trainer - INFO -     epoch          : 13
+[2022-03-18 12:49:10] - trainer - INFO -     loss           : 0.9052001100320083
+[2022-03-18 12:49:10] - trainer - INFO -     accuracy       : 0.6704727564102565
+[2022-03-18 12:49:10] - trainer - INFO -     top_k_acc      : 0.9266826923076923
+[2022-03-18 12:49:28] - trainer - INFO -     epoch          : 14
+[2022-03-18 12:49:28] - trainer - INFO -     loss           : 0.8266911139855018
+[2022-03-18 12:49:28] - trainer - INFO -     accuracy       : 0.7133413461538461
+[2022-03-18 12:49:28] - trainer - INFO -     top_k_acc      : 0.9344951923076923
+[2022-03-18 12:49:45] - trainer - INFO -     epoch          : 15
+[2022-03-18 12:49:45] - trainer - INFO -     loss           : 0.7610159195386447
+[2022-03-18 12:49:45] - trainer - INFO -     accuracy       : 0.7377804487179488
+[2022-03-18 12:49:45] - trainer - INFO -     top_k_acc      : 0.938301282051282
+[2022-03-18 12:49:45] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0318_124515\checkpoints\checkpoint-epoch15.pth ...
+
+[2022-03-18 12:50:03] - trainer - INFO -     epoch          : 16
+[2022-03-18 12:50:03] - trainer - INFO -     loss           : 0.7184489461091849
+[2022-03-18 12:50:03] - trainer - INFO -     accuracy       : 0.7596153846153846
+[2022-03-18 12:50:03] - trainer - INFO -     top_k_acc      : 0.9381009615384616
+[2022-03-18 12:50:21] - trainer - INFO -     epoch          : 17
+[2022-03-18 12:50:21] - trainer - INFO -     loss           : 0.671144581758059
+[2022-03-18 12:50:21] - trainer - INFO -     accuracy       : 0.7724358974358974
+[2022-03-18 12:50:21] - trainer - INFO -     top_k_acc      : 0.9471153846153846
+[2022-03-18 12:50:38] - trainer - INFO -     epoch          : 18
+[2022-03-18 12:50:38] - trainer - INFO -     loss           : 0.6194342833298904
+[2022-03-18 12:50:38] - trainer - INFO -     accuracy       : 0.7974759615384616
+[2022-03-18 12:50:38] - trainer - INFO -     top_k_acc      : 0.9495192307692307
+[2022-03-18 12:50:55] - trainer - INFO -     epoch          : 19
+[2022-03-18 12:50:55] - trainer - INFO -     loss           : 0.5894160637488732
+[2022-03-18 12:50:55] - trainer - INFO -     accuracy       : 0.8068910256410257
+[2022-03-18 12:50:55] - trainer - INFO -     top_k_acc      : 0.9463141025641026
+[2022-03-18 12:51:12] - trainer - INFO -     epoch          : 20
+[2022-03-18 12:51:12] - trainer - INFO -     loss           : 0.5921206199205838
+[2022-03-18 12:51:12] - trainer - INFO -     accuracy       : 0.8010817307692307
+[2022-03-18 12:51:12] - trainer - INFO -     top_k_acc      : 0.9527243589743589
+[2022-03-18 12:51:12] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0318_124515\checkpoints\checkpoint-epoch20.pth ...
+
+[2022-03-18 12:51:30] - trainer - INFO -     epoch          : 21
+[2022-03-18 12:51:30] - trainer - INFO -     loss           : 0.5327389882161067
+[2022-03-18 12:51:30] - trainer - INFO -     accuracy       : 0.8189102564102565
+[2022-03-18 12:51:30] - trainer - INFO -     top_k_acc      : 0.9615384615384616
+[2022-03-18 12:51:47] - trainer - INFO -     epoch          : 22
+[2022-03-18 12:51:47] - trainer - INFO -     loss           : 0.5479391446480384
+[2022-03-18 12:51:47] - trainer - INFO -     accuracy       : 0.8151041666666666
+[2022-03-18 12:51:47] - trainer - INFO -     top_k_acc      : 0.9519230769230769
+[2022-03-18 12:52:04] - trainer - INFO -     epoch          : 23
+[2022-03-18 12:52:04] - trainer - INFO -     loss           : 0.524004191160202
+[2022-03-18 12:52:04] - trainer - INFO -     accuracy       : 0.8193108974358974
+[2022-03-18 12:52:04] - trainer - INFO -     top_k_acc      : 0.9553285256410257
+[2022-03-18 12:52:21] - trainer - INFO -     epoch          : 24
+[2022-03-18 12:52:21] - trainer - INFO -     loss           : 0.5000497721708738
+[2022-03-18 12:52:21] - trainer - INFO -     accuracy       : 0.8375400641025641
+[2022-03-18 12:52:21] - trainer - INFO -     top_k_acc      : 0.9577323717948718
+[2022-03-18 12:52:38] - trainer - INFO -     epoch          : 25
+[2022-03-18 12:52:38] - trainer - INFO -     loss           : 0.4706593912381392
+[2022-03-18 12:52:38] - trainer - INFO -     accuracy       : 0.8361378205128205
+[2022-03-18 12:52:38] - trainer - INFO -     top_k_acc      : 0.9677483974358974
+[2022-03-18 12:52:38] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0318_124515\checkpoints\checkpoint-epoch25.pth ...
+
+[2022-03-18 12:52:56] - trainer - INFO -     epoch          : 26
+[2022-03-18 12:52:56] - trainer - INFO -     loss           : 0.4707150367590097
+[2022-03-18 12:52:56] - trainer - INFO -     accuracy       : 0.8371394230769231
+[2022-03-18 12:52:56] - trainer - INFO -     top_k_acc      : 0.9583333333333334
+[2022-03-18 12:53:13] - trainer - INFO -     epoch          : 27
+[2022-03-18 12:53:13] - trainer - INFO -     loss           : 0.4497080376515022
+[2022-03-18 12:53:13] - trainer - INFO -     accuracy       : 0.8473557692307693
+[2022-03-18 12:53:13] - trainer - INFO -     top_k_acc      : 0.9675480769230769
+[2022-03-18 12:53:30] - trainer - INFO -     epoch          : 28
+[2022-03-18 12:53:30] - trainer - INFO -     loss           : 0.4768336621614603
+[2022-03-18 12:53:30] - trainer - INFO -     accuracy       : 0.84375
+[2022-03-18 12:53:30] - trainer - INFO -     top_k_acc      : 0.9567307692307693
+[2022-03-18 12:53:52] - trainer - INFO -     epoch          : 29
+[2022-03-18 12:53:52] - trainer - INFO -     loss           : 0.44514942398438084
+[2022-03-18 12:53:52] - trainer - INFO -     accuracy       : 0.8475560897435896
+[2022-03-18 12:53:52] - trainer - INFO -     top_k_acc      : 0.9693509615384616
+[2022-03-18 12:54:10] - trainer - INFO -     epoch          : 30
+[2022-03-18 12:54:10] - trainer - INFO -     loss           : 0.42205334397462696
+[2022-03-18 12:54:10] - trainer - INFO -     accuracy       : 0.8553685897435896
+[2022-03-18 12:54:10] - trainer - INFO -     top_k_acc      : 0.9713541666666666
+[2022-03-18 12:54:10] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0318_124515\checkpoints\checkpoint-epoch30.pth ...
+
+[2022-03-18 12:54:28] - trainer - INFO -     epoch          : 31
+[2022-03-18 12:54:28] - trainer - INFO -     loss           : 0.4202277729144463
+[2022-03-18 12:54:28] - trainer - INFO -     accuracy       : 0.859375
+[2022-03-18 12:54:28] - trainer - INFO -     top_k_acc      : 0.9725560897435896
+[2022-03-18 12:54:46] - trainer - INFO -     epoch          : 32
+[2022-03-18 12:54:46] - trainer - INFO -     loss           : 0.41894638538360596
+[2022-03-18 12:54:46] - trainer - INFO -     accuracy       : 0.8503605769230769
+[2022-03-18 12:54:46] - trainer - INFO -     top_k_acc      : 0.9661458333333334
+[2022-03-18 12:55:05] - trainer - INFO -     epoch          : 33
+[2022-03-18 12:55:05] - trainer - INFO -     loss           : 0.40705575622045076
+[2022-03-18 12:55:05] - trainer - INFO -     accuracy       : 0.8549679487179488
+[2022-03-18 12:55:05] - trainer - INFO -     top_k_acc      : 0.9729567307692307
+[2022-03-18 12:55:33] - trainer - INFO -     epoch          : 34
+[2022-03-18 12:55:33] - trainer - INFO -     loss           : 0.38897531307660616
+[2022-03-18 12:55:33] - trainer - INFO -     accuracy       : 0.8629807692307693
+[2022-03-18 12:55:33] - trainer - INFO -     top_k_acc      : 0.9725560897435896
+[2022-03-18 12:55:54] - trainer - INFO -     epoch          : 35
+[2022-03-18 12:55:54] - trainer - INFO -     loss           : 0.3881387091599978
+[2022-03-18 12:55:54] - trainer - INFO -     accuracy       : 0.8685897435897435
+[2022-03-18 12:55:54] - trainer - INFO -     top_k_acc      : 0.9759615384615384
+[2022-03-18 12:55:54] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0318_124515\checkpoints\checkpoint-epoch35.pth ...
+
+[2022-03-18 12:56:14] - trainer - INFO -     epoch          : 36
+[2022-03-18 12:56:14] - trainer - INFO -     loss           : 0.3814248889684677
+[2022-03-18 12:56:14] - trainer - INFO -     accuracy       : 0.8597756410256411
+[2022-03-18 12:56:14] - trainer - INFO -     top_k_acc      : 0.9801682692307693
+[2022-03-18 12:56:37] - trainer - INFO -     epoch          : 37
+[2022-03-18 12:56:37] - trainer - INFO -     loss           : 0.3976267667917105
+[2022-03-18 12:56:37] - trainer - INFO -     accuracy       : 0.8567708333333334
+[2022-03-18 12:56:37] - trainer - INFO -     top_k_acc      : 0.9755608974358974
+[2022-03-18 12:57:00] - trainer - INFO -     epoch          : 38
+[2022-03-18 12:57:00] - trainer - INFO -     loss           : 0.38238869263575626
+[2022-03-18 12:57:00] - trainer - INFO -     accuracy       : 0.8675881410256411
+[2022-03-18 12:57:00] - trainer - INFO -     top_k_acc      : 0.9729567307692307
+[2022-03-18 12:57:21] - trainer - INFO -     epoch          : 39
+[2022-03-18 12:57:21] - trainer - INFO -     loss           : 0.38588276734718907
+[2022-03-18 12:57:21] - trainer - INFO -     accuracy       : 0.8643830128205128
+[2022-03-18 12:57:21] - trainer - INFO -     top_k_acc      : 0.9751602564102565
+[2022-03-18 12:57:45] - trainer - INFO -     epoch          : 40
+[2022-03-18 12:57:45] - trainer - INFO -     loss           : 0.3660077934081738
+[2022-03-18 12:57:45] - trainer - INFO -     accuracy       : 0.875801282051282
+[2022-03-18 12:57:45] - trainer - INFO -     top_k_acc      : 0.9813701923076923
+[2022-03-18 12:57:45] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0318_124515\checkpoints\checkpoint-epoch40.pth ...
+
+[2022-03-18 12:58:10] - trainer - INFO -     epoch          : 41
+[2022-03-18 12:58:10] - trainer - INFO -     loss           : 0.36728576628061443
+[2022-03-18 12:58:10] - trainer - INFO -     accuracy       : 0.8770032051282051
+[2022-03-18 12:58:10] - trainer - INFO -     top_k_acc      : 0.9741586538461539
+[2022-03-18 12:58:30] - trainer - INFO -     epoch          : 42
+[2022-03-18 12:58:30] - trainer - INFO -     loss           : 0.35963560755436236
+[2022-03-18 12:58:30] - trainer - INFO -     accuracy       : 0.8762019230769231
+[2022-03-18 12:58:30] - trainer - INFO -     top_k_acc      : 0.9787660256410257
+[2022-03-18 12:58:55] - trainer - INFO -     epoch          : 43
+[2022-03-18 12:58:55] - trainer - INFO -     loss           : 0.34890510829595417
+[2022-03-18 12:58:55] - trainer - INFO -     accuracy       : 0.8802083333333334
+[2022-03-18 12:58:55] - trainer - INFO -     top_k_acc      : 0.9801682692307693
+[2022-03-18 12:59:18] - trainer - INFO -     epoch          : 44
+[2022-03-18 12:59:18] - trainer - INFO -     loss           : 0.3467636681520022
+[2022-03-18 12:59:18] - trainer - INFO -     accuracy       : 0.8856169871794872
+[2022-03-18 12:59:18] - trainer - INFO -     top_k_acc      : 0.9789663461538461
+[2022-03-18 12:59:36] - trainer - INFO -     epoch          : 45
+[2022-03-18 12:59:36] - trainer - INFO -     loss           : 0.341713106402984
+[2022-03-18 12:59:36] - trainer - INFO -     accuracy       : 0.8892227564102565
+[2022-03-18 12:59:36] - trainer - INFO -     top_k_acc      : 0.9837740384615384
+[2022-03-18 12:59:36] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0318_124515\checkpoints\checkpoint-epoch45.pth ...
+
+[2022-03-18 13:00:01] - trainer - INFO -     epoch          : 46
+[2022-03-18 13:00:01] - trainer - INFO -     loss           : 0.33754103229596066
+[2022-03-18 13:00:01] - trainer - INFO -     accuracy       : 0.8860176282051282
+[2022-03-18 13:00:01] - trainer - INFO -     top_k_acc      : 0.9813701923076923
+[2022-03-18 13:00:24] - trainer - INFO -     epoch          : 47
+[2022-03-18 13:00:24] - trainer - INFO -     loss           : 0.34079856941333186
+[2022-03-18 13:00:24] - trainer - INFO -     accuracy       : 0.8816105769230769
+[2022-03-18 13:00:24] - trainer - INFO -     top_k_acc      : 0.9747596153846154
+[2022-03-18 13:00:47] - trainer - INFO -     epoch          : 48
+[2022-03-18 13:00:47] - trainer - INFO -     loss           : 0.3340035906204811
+[2022-03-18 13:00:47] - trainer - INFO -     accuracy       : 0.8798076923076923
+[2022-03-18 13:00:47] - trainer - INFO -     top_k_acc      : 0.9861778846153846
+[2022-03-18 13:01:09] - trainer - INFO -     epoch          : 49
+[2022-03-18 13:01:09] - trainer - INFO -     loss           : 0.3341165448610599
+[2022-03-18 13:01:09] - trainer - INFO -     accuracy       : 0.8784054487179488
+[2022-03-18 13:01:09] - trainer - INFO -     top_k_acc      : 0.9855769230769231
+[2022-03-18 13:01:29] - trainer - INFO -     epoch          : 50
+[2022-03-18 13:01:29] - trainer - INFO -     loss           : 0.33061305376199573
+[2022-03-18 13:01:29] - trainer - INFO -     accuracy       : 0.8790064102564104
+[2022-03-18 13:01:29] - trainer - INFO -     top_k_acc      : 0.9821714743589743
+[2022-03-18 13:01:29] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0318_124515\checkpoints\checkpoint-epoch50.pth ...
+
+[2022-03-18 13:01:49] - trainer - INFO -     epoch          : 51
+[2022-03-18 13:01:49] - trainer - INFO -     loss           : 0.3393720250863295
+[2022-03-18 13:01:49] - trainer - INFO -     accuracy       : 0.882011217948718
+[2022-03-18 13:01:49] - trainer - INFO -     top_k_acc      : 0.9801682692307693
+[2022-03-18 13:02:11] - trainer - INFO -     epoch          : 52
+[2022-03-18 13:02:11] - trainer - INFO -     loss           : 0.31054095923900604
+[2022-03-18 13:02:11] - trainer - INFO -     accuracy       : 0.8936298076923077
+[2022-03-18 13:02:11] - trainer - INFO -     top_k_acc      : 0.9821714743589743
+[2022-03-18 13:02:38] - trainer - INFO -     epoch          : 53
+[2022-03-18 13:02:38] - trainer - INFO -     loss           : 0.3271267288006269
+[2022-03-18 13:02:38] - trainer - INFO -     accuracy       : 0.8918269230769231
+[2022-03-18 13:02:38] - trainer - INFO -     top_k_acc      : 0.9833733974358974
+[2022-03-18 13:03:01] - trainer - INFO -     epoch          : 54
+[2022-03-18 13:03:01] - trainer - INFO -     loss           : 0.29959536171876466
+[2022-03-18 13:03:01] - trainer - INFO -     accuracy       : 0.8974358974358974
+[2022-03-18 13:03:01] - trainer - INFO -     top_k_acc      : 0.9861778846153846
+[2022-03-18 13:03:24] - trainer - INFO -     epoch          : 55
+[2022-03-18 13:03:24] - trainer - INFO -     loss           : 0.29825787246227264
+[2022-03-18 13:03:24] - trainer - INFO -     accuracy       : 0.8994391025641026
+[2022-03-18 13:03:24] - trainer - INFO -     top_k_acc      : 0.9849759615384616
+[2022-03-18 13:03:24] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0318_124515\checkpoints\checkpoint-epoch55.pth ...
+
+[2022-03-18 13:03:48] - trainer - INFO -     epoch          : 56
+[2022-03-18 13:03:48] - trainer - INFO -     loss           : 0.31074055570822495
+[2022-03-18 13:03:48] - trainer - INFO -     accuracy       : 0.9010416666666666
+[2022-03-18 13:03:48] - trainer - INFO -     top_k_acc      : 0.9803685897435896
+[2022-03-18 13:04:11] - trainer - INFO -     epoch          : 57
+[2022-03-18 13:04:11] - trainer - INFO -     loss           : 0.2904075143428949
+[2022-03-18 13:04:11] - trainer - INFO -     accuracy       : 0.8942307692307693
+[2022-03-18 13:04:11] - trainer - INFO -     top_k_acc      : 0.9863782051282051
+[2022-03-18 13:04:36] - trainer - INFO -     epoch          : 58
+[2022-03-18 13:04:36] - trainer - INFO -     loss           : 0.30729204187026393
+[2022-03-18 13:04:36] - trainer - INFO -     accuracy       : 0.8990384615384616
+[2022-03-18 13:04:36] - trainer - INFO -     top_k_acc      : 0.9873798076923077
+[2022-03-18 13:04:56] - trainer - INFO -     epoch          : 59
+[2022-03-18 13:04:56] - trainer - INFO -     loss           : 0.3039172990964009
+[2022-03-18 13:04:56] - trainer - INFO -     accuracy       : 0.8948317307692307
+[2022-03-18 13:04:56] - trainer - INFO -     top_k_acc      : 0.9857772435897435
+[2022-03-18 13:05:15] - trainer - INFO -     epoch          : 60
+[2022-03-18 13:05:15] - trainer - INFO -     loss           : 0.2971925368675819
+[2022-03-18 13:05:15] - trainer - INFO -     accuracy       : 0.8972355769230769
+[2022-03-18 13:05:15] - trainer - INFO -     top_k_acc      : 0.9829727564102565
+[2022-03-18 13:05:15] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0318_124515\checkpoints\checkpoint-epoch60.pth ...
+
+[2022-03-18 13:05:36] - trainer - INFO -     epoch          : 61
+[2022-03-18 13:05:36] - trainer - INFO -     loss           : 0.2988351514706245
+[2022-03-18 13:05:36] - trainer - INFO -     accuracy       : 0.8894230769230769
+[2022-03-18 13:05:36] - trainer - INFO -     top_k_acc      : 0.9845753205128205
+[2022-03-18 13:06:00] - trainer - INFO -     epoch          : 62
+[2022-03-18 13:06:00] - trainer - INFO -     loss           : 0.2836508189256375
+[2022-03-18 13:06:00] - trainer - INFO -     accuracy       : 0.9030448717948718
+[2022-03-18 13:06:00] - trainer - INFO -     top_k_acc      : 0.9873798076923077
+[2022-03-18 13:06:22] - trainer - INFO -     epoch          : 63
+[2022-03-18 13:06:22] - trainer - INFO -     loss           : 0.29030980742894685
+[2022-03-18 13:06:22] - trainer - INFO -     accuracy       : 0.9058493589743589
+[2022-03-18 13:06:22] - trainer - INFO -     top_k_acc      : 0.9867788461538461
+[2022-03-18 13:06:41] - trainer - INFO -     epoch          : 64
+[2022-03-18 13:06:41] - trainer - INFO -     loss           : 0.2853288776599444
+[2022-03-18 13:06:41] - trainer - INFO -     accuracy       : 0.9018429487179488
+[2022-03-18 13:06:41] - trainer - INFO -     top_k_acc      : 0.9855769230769231
+[2022-03-18 13:07:00] - trainer - INFO -     epoch          : 65
+[2022-03-18 13:07:00] - trainer - INFO -     loss           : 0.2970467244203274
+[2022-03-18 13:07:00] - trainer - INFO -     accuracy       : 0.8948317307692307
+[2022-03-18 13:07:00] - trainer - INFO -     top_k_acc      : 0.9887820512820512
+[2022-03-18 13:07:00] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0318_124515\checkpoints\checkpoint-epoch65.pth ...
+
+[2022-03-18 13:07:20] - trainer - INFO -     epoch          : 66
+[2022-03-18 13:07:20] - trainer - INFO -     loss           : 0.27723867618120634
+[2022-03-18 13:07:20] - trainer - INFO -     accuracy       : 0.9032451923076923
+[2022-03-18 13:07:20] - trainer - INFO -     top_k_acc      : 0.9873798076923077
+[2022-03-18 13:07:40] - trainer - INFO -     epoch          : 67
+[2022-03-18 13:07:40] - trainer - INFO -     loss           : 0.2850471081642004
+[2022-03-18 13:07:40] - trainer - INFO -     accuracy       : 0.9102564102564104
+[2022-03-18 13:07:40] - trainer - INFO -     top_k_acc      : 0.9899839743589743
+[2022-03-18 13:08:00] - trainer - INFO -     epoch          : 68
+[2022-03-18 13:08:00] - trainer - INFO -     loss           : 0.2712710786324281
+[2022-03-18 13:08:00] - trainer - INFO -     accuracy       : 0.8974358974358974
+[2022-03-18 13:08:00] - trainer - INFO -     top_k_acc      : 0.9899839743589743
+[2022-03-18 13:08:19] - trainer - INFO -     epoch          : 69
+[2022-03-18 13:08:19] - trainer - INFO -     loss           : 0.2824097000635587
+[2022-03-18 13:08:19] - trainer - INFO -     accuracy       : 0.9082532051282051
+[2022-03-18 13:08:19] - trainer - INFO -     top_k_acc      : 0.9833733974358974
+[2022-03-18 13:08:38] - trainer - INFO -     epoch          : 70
+[2022-03-18 13:08:38] - trainer - INFO -     loss           : 0.2683899494317862
+[2022-03-18 13:08:38] - trainer - INFO -     accuracy       : 0.9176682692307693
+[2022-03-18 13:08:38] - trainer - INFO -     top_k_acc      : 0.9857772435897435
+[2022-03-18 13:08:38] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0318_124515\checkpoints\checkpoint-epoch70.pth ...
+
+[2022-03-18 13:08:58] - trainer - INFO -     epoch          : 71
+[2022-03-18 13:08:58] - trainer - INFO -     loss           : 0.28405252213661486
+[2022-03-18 13:08:58] - trainer - INFO -     accuracy       : 0.9042467948717949
+[2022-03-18 13:08:58] - trainer - INFO -     top_k_acc      : 0.9827724358974359
+[2022-03-18 13:09:19] - trainer - INFO -     epoch          : 72
+[2022-03-18 13:09:19] - trainer - INFO -     loss           : 0.2875622579684624
+[2022-03-18 13:09:19] - trainer - INFO -     accuracy       : 0.9006410256410257
+[2022-03-18 13:09:19] - trainer - INFO -     top_k_acc      : 0.9869791666666666
+[2022-03-18 13:09:41] - trainer - INFO -     epoch          : 73
+[2022-03-18 13:09:41] - trainer - INFO -     loss           : 0.27560916199133945
+[2022-03-18 13:09:41] - trainer - INFO -     accuracy       : 0.905448717948718
+[2022-03-18 13:09:41] - trainer - INFO -     top_k_acc      : 0.9811698717948718
+[2022-03-18 13:10:02] - trainer - INFO -     epoch          : 74
+[2022-03-18 13:10:02] - trainer - INFO -     loss           : 0.27813539940577287
+[2022-03-18 13:10:02] - trainer - INFO -     accuracy       : 0.9082532051282051
+[2022-03-18 13:10:02] - trainer - INFO -     top_k_acc      : 0.9881810897435896
+[2022-03-18 13:10:22] - trainer - INFO -     epoch          : 75
+[2022-03-18 13:10:22] - trainer - INFO -     loss           : 0.2709223341483336
+[2022-03-18 13:10:22] - trainer - INFO -     accuracy       : 0.9096554487179488
+[2022-03-18 13:10:22] - trainer - INFO -     top_k_acc      : 0.9867788461538461
+[2022-03-18 13:10:22] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0318_124515\checkpoints\checkpoint-epoch75.pth ...
+
+[2022-03-18 13:10:40] - trainer - INFO -     epoch          : 76
+[2022-03-18 13:10:40] - trainer - INFO -     loss           : 0.26759299635887146
+[2022-03-18 13:10:40] - trainer - INFO -     accuracy       : 0.9166666666666666
+[2022-03-18 13:10:40] - trainer - INFO -     top_k_acc      : 0.9897836538461539
+[2022-03-18 13:10:57] - trainer - INFO -     epoch          : 77
+[2022-03-18 13:10:57] - trainer - INFO -     loss           : 0.26970333090195286
+[2022-03-18 13:10:57] - trainer - INFO -     accuracy       : 0.9180689102564104
+[2022-03-18 13:10:57] - trainer - INFO -     top_k_acc      : 0.9879807692307693
+[2022-03-18 13:11:15] - trainer - INFO -     epoch          : 78
+[2022-03-18 13:11:15] - trainer - INFO -     loss           : 0.26223963499069214
+[2022-03-18 13:11:15] - trainer - INFO -     accuracy       : 0.9152644230769231
+[2022-03-18 13:11:15] - trainer - INFO -     top_k_acc      : 0.9841746794871795
+[2022-03-18 13:11:32] - trainer - INFO -     epoch          : 79
+[2022-03-18 13:11:32] - trainer - INFO -     loss           : 0.2684008800066434
+[2022-03-18 13:11:32] - trainer - INFO -     accuracy       : 0.9108573717948718
+[2022-03-18 13:11:32] - trainer - INFO -     top_k_acc      : 0.9815705128205128
+[2022-03-18 13:11:51] - trainer - INFO -     epoch          : 80
+[2022-03-18 13:11:51] - trainer - INFO -     loss           : 0.2565060521547611
+[2022-03-18 13:11:51] - trainer - INFO -     accuracy       : 0.9122596153846154
+[2022-03-18 13:11:51] - trainer - INFO -     top_k_acc      : 0.9897836538461539
+[2022-03-18 13:11:51] - trainer - INFO - Saving checkpoint: saved\models\SimpleCNN_ZalandoScraper\0318_124515\checkpoints\checkpoint-epoch80.pth ...
+

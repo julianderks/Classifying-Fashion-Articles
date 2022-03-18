@@ -6,7 +6,7 @@ from utils import read_json
 
 
 def setup_logging(
-    save_dir, log_config="model/logger/logger_config.json", default_level=logging.INFO
+    save_dir, log_config="./logger/logger_config.json", default_level=logging.INFO
 ):
     """
     Setup logging configuration

@@ -2,7 +2,7 @@ import cfscrape #  Wrapper for the request library that can bypass Cloudflare's 
 from bs4 import BeautifulSoup
 import pandas as pd
 import json
-
+import time
 from utils.logging import Logger
 
 request = cfscrape.CloudflareScraper()  
@@ -23,15 +23,28 @@ class ZalandoScraper():
         self.Logger.log_data("INFO", "Started scraping...")
         data_df = pd.DataFrame()
 
+        # Loop until no more webpages
         while True:
             self.Logger.log_data("INFO", f"---- Page {self.page_number} ----")
-            # print(f' ---- Page {self.page_number} ---- \n')
 
             page_url = f"https://www.zalando.nl/kleding/?p={self.page_number}"
 
-            content = self.get_page_content(page_url)
-            page_articles = self.extract_articles(content)
+            #  On some occasions, page returns no content. we retry a number of times
+            attempts=0
+            while True:
+                time.sleep(1)
+
+                content = self.get_page_content(page_url)
+                page_articles = self.extract_articles(content)
             
+                if len(page_articles) == 0:
+                    if attempts == 4:
+                        self.Logger.log_data("ERROR",f"Empty article list from page {self.page_number:d} after {attempts+1:d} attempts")
+                        exit()
+                    attempts+=1
+                else:
+                    break
+
             data_df = pd.concat([data_df, pd.DataFrame(page_articles)], ignore_index=True)
 
             data_df.to_csv(self.save_path, index=False)
@@ -97,9 +110,8 @@ class ZalandoScraper():
 
         if len(page_articles) == 0:
             self.Logger.log_data(
-                        "ERROR",
-                        f"Empty article list on while retrieving page: {self.page_number}")
-            exit()
+                        "WARNING",
+                        f"Empty article list while retrieving page: {self.page_number}, retrying...")
 
         return page_articles
 
