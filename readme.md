@@ -93,7 +93,7 @@ Go to the [webscraper readme](https://github.com/julianderks/Classifying-Fashion
 - Training/Validating/Testing the CNN implemented with pytorch :x:
   - Need to include validation/testing parts
 - Deploy the CNN with Flask where an user can provide an image to be classified and where the results are stored in a database :x:
-  - Made a tiny start, currently investing time in learning more about HTML/CSS and Flask
+  - Made a tiny start, currently investing time in learning more about HTML/CSS/Bootstrap and Flask
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
