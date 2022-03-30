@@ -33,7 +33,9 @@
 
 **Note: The is a project under construction, many components will not work yet.**
 
-A self-study project with the aim to implement every step of an ML project (i.e. from data collection to production) and to get more familiar with best practices around git repositories (like having a proper readme.md :partying_face:). Specifically, a webscraper is build to extract packshots of fashion articles from [Zalando](https://www.zalando.nl/kleding/). The extacted data is preprocessed on which a (very simple) pytorch based CNN is trained. The pytorch code will contain alot of boiler plate code such that it can be used in future pytorch projects. The trained model will eventually be deployed on an web application using Flask, users will be able to interact with it and data is stored to a database.
+A self-study project with the aim to implement every step of a ML project (i.e. from data collection to production) and to get more familiar with best practices around git repositories (like having a proper readme.md :partying_face:). 
+
+A webscraper is build to extract packshots of fashion articles from [Zalando](https://www.zalando.nl/kleding/). The extacted data is preprocessed on which a (very simple) pytorch based CNN is trained. The pytorch code will contain alot of boiler plate code such that it can be used in future pytorch projects. The trained model will eventually be deployed on an web application using Flask, users will be able to interact with it and data is stored to a database.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -88,10 +90,10 @@ Go to the [webscraper readme](https://github.com/julianderks/Classifying-Fashion
 ## Roadmap
 
 - Collect image data of fashion articles from [Zalando](https://www.zalando.nl/kleding/) with a webscraper :heavy_check_mark:
-- Traing/Validating/Testing the CNN implemented with pytorch :x:
-  - Not finished
+- Training/Validating/Testing the CNN implemented with pytorch :x:
+  - Need to include validation/testing parts
 - Deploy the CNN with Flask where an user can provide an image to be classified and where the results are stored in a database :x:
-  - Made a tiny start, currently investing time in learning more about HTML/CSS and FLASK
+  - Made a tiny start, currently investing time in learning more about HTML/CSS/Bootstrap and Flask
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
