@@ -1,0 +1,14 @@
+{% extends 'base_layout.html' %} {% block body %}
+<!-- Header-->
+<header class="masthead d-flex align-items-center">
+  <div class="container px-4 px-lg-5 text-center">
+    <h1 class="mb-1">My Flask App</h1>
+    <h3 class="mb-5"><em>Classifying Fashion Article Packshots</em></h3>
+    <a
+      class="btn btn-primary btn-xl"
+      href="{{ url_for('classifier.classifier_page') }}"
+      >Go to classifier</a
+    >
+  </div>
+</header>
+{% endblock body %}
